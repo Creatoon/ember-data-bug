@@ -1,0 +1,10 @@
+<h1>Speakers</h1>
+<h2>Sorted by Name</h2>
+{{#each @model.sortedByName as |speaker|}}
+    <div>{{ speaker.name }}</div>
+{{/each}}
+<h2>Sorted by ID</h2>
+{{#each @model.sortedById as |speaker|}}
+    <div>{{ speaker.name }}</div>
+{{/each}}
+{{outlet}}
